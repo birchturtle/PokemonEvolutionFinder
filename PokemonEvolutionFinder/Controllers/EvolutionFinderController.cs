@@ -18,7 +18,7 @@ public class EvolutionFinderController : ControllerBase
     }
 
     [HttpGet("{name}")]
-    public IEnumerable<String> Get(string name)
+    public async Task<IEnumerable<String>> GetAsync(string name)
     {
         return EvolutionTree;
     }
