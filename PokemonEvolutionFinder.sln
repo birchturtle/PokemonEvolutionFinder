@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEvolutionFinder", "PokemonEvolutionFinder\PokemonEvolutionFinder.csproj", "{356F361E-FED8-4E50-B0F1-B52BC627D683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonEvolutionFinder.Tests", "PokemonEvolutionFinder.Tests\PokemonEvolutionFinder.Tests.csproj", "{544B4A85-1F8E-4262-85A0-782AACC63382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{356F361E-FED8-4E50-B0F1-B52BC627D683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356F361E-FED8-4E50-B0F1-B52BC627D683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356F361E-FED8-4E50-B0F1-B52BC627D683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356F361E-FED8-4E50-B0F1-B52BC627D683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{544B4A85-1F8E-4262-85A0-782AACC63382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{544B4A85-1F8E-4262-85A0-782AACC63382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{544B4A85-1F8E-4262-85A0-782AACC63382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{544B4A85-1F8E-4262-85A0-782AACC63382}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
