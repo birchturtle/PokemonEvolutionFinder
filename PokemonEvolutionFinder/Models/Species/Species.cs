@@ -141,7 +141,7 @@ namespace PokemonEvolutionFinder.Models.Species;
         public string url { get; set; }
     }
 
-    public class Root
+    public class SpeciesRoot
     {
         [JsonPropertyName("base_happiness")]
         public int base_happiness { get; set; }

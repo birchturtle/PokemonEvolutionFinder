@@ -11,8 +11,8 @@ public class SpeciesRepository
         _client = client;
     }
 
-    public async Task<Root> GetEvolutionChainFromSpecies(string speciesUrl)
+    public async Task<SpeciesRoot> GetEvolutionChainFromSpecies(string speciesUrl)
     {
-        return await _client.GetFromJsonAsync<Root>(speciesUrl);
+        return await _client.GetFromJsonAsync<SpeciesRoot>(speciesUrl);
     }
 }

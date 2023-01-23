@@ -90,7 +90,7 @@ namespace PokemonEvolutionFinder.Models.EvolutionChain;
         public Species species { get; set; }
     }
 
-    public class Root
+    public class EvolutionChainRoot
     {
         [JsonPropertyName("baby_trigger_item")]
         public object baby_trigger_item { get; set; }

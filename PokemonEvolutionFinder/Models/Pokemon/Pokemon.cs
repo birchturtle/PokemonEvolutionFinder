@@ -440,7 +440,7 @@ namespace PokemonEvolutionFinder.Models.Pokemon;
         public string front_transparent { get; set; }
     }
 
-    public class Root
+    public class PokemonRoot
     {
         [JsonPropertyName("abilities")]
         public List<Ability> abilities { get; set; }

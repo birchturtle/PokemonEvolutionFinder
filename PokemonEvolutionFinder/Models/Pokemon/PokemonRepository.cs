@@ -9,8 +9,8 @@ public class EvolutionRepository
         _client = client;
     }
 
-    public async Task<Root> GetByName(string name)
+    public async Task<PokemonRoot> GetByName(string name)
     {
-        return await _client.GetFromJsonAsync<Root>($"https://pokeapi.co/api/v2/pokemon/{name}");
+        return await _client.GetFromJsonAsync<PokemonRoot>($"https://pokeapi.co/api/v2/pokemon/{name}");
     }
 }
