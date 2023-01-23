@@ -20,7 +20,7 @@ public class EvolutionFinderTests
     [MemberData(nameof(CollectionOfEvolutionChains))]
     public async void ControllerReturnsEvolutionChainGivenPokemonName(IEnumerable<string> expected, string name)
     {
-        var controller = new EvolutionFinderController();
+        var controller = new EvolutionFinderController(new EvolutionChainBuilder());
 
         var result = await controller.GetAsync(name);
         

@@ -1,9 +1,10 @@
-﻿using PokemonEvolutionFinder.Models.Pokemon;
+﻿using PokemonEvolutionFinder.Controllers;
+using PokemonEvolutionFinder.Models.Pokemon;
 using PokemonEvolutionFinder.Models.Species;
 using PokemonEvolutionFinder.Models.EvolutionChain;
 namespace PokemonEvolutionFinder;
 
-public class EvolutionChainBuilder
+public class EvolutionChainBuilder : IEvolutionChainBuilder
 {
     private readonly EvolutionRepository _pokemonRepository;
     private readonly SpeciesRepository _speciesRepository;

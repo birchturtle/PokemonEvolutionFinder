@@ -8,12 +8,16 @@ namespace PokemonEvolutionFinder.Controllers;
 [Route("[controller]")]
 public class EvolutionFinderController : ControllerBase
 {
+    private readonly IEvolutionChainBuilder _builder;
+
+    public EvolutionFinderController(IEvolutionChainBuilder builder)
+    {
+        _builder = builder;
+    }
 
     [HttpGet("{name}")]
     public async Task<IEnumerable<String>> GetAsync(string name)
     {
-        var builder = new EvolutionChainBuilder();
-
-        return await builder.BuildEvolutionChainFromName(name);
+        return await _builder.BuildEvolutionChainFromName(name);
     }
 }
