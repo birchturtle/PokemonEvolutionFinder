@@ -4,9 +4,9 @@ public class EvolutionRepository
 {
     private HttpClient _client;
 
-    public EvolutionRepository(HttpClient client)
+    public EvolutionRepository()
     {
-        _client = client;
+        _client = new HttpClient();
     }
 
     public async Task<PokemonRoot> GetByName(string name)

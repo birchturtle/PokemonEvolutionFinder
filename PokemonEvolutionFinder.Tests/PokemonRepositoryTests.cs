@@ -9,7 +9,7 @@ public class EvolutionRepositoryTests
     public async void RepositoryCanGetSpeciesUrlByPokemonName()
     {
         string name = "charmander";
-        var repository = new EvolutionRepository(new HttpClient());
+        var repository = new EvolutionRepository();
 
         var pokemon = await repository.GetByName(name);
         //var evolutions = await client.GetFromJsonAsync<SpeciesDto>(pokemon.Species.url);

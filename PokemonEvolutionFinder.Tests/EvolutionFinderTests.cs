@@ -18,12 +18,12 @@ public class EvolutionFinderTests
     
     [Theory]
     [MemberData(nameof(CollectionOfEvolutionChains))]
-    public async void ControllerReturnsEvolutionChainGivenPokemonName(List<string> expected, string name)
+    public async void ControllerReturnsEvolutionChainGivenPokemonName(IEnumerable<string> expected, string name)
     {
         var controller = new EvolutionFinderController();
 
         var result = await controller.GetAsync(name);
         
-        Assert.Equal(result, expected);
+        Assert.Equal(expected, result);
     }
 }

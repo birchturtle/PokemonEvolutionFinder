@@ -6,9 +6,9 @@ public class SpeciesRepository
 {
     private HttpClient _client;
 
-    public SpeciesRepository(HttpClient client)
+    public SpeciesRepository()
     {
-        _client = client;
+        _client = new HttpClient();
     }
 
     public async Task<SpeciesRoot> GetEvolutionChainFromSpecies(string speciesUrl)

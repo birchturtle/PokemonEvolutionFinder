@@ -4,9 +4,9 @@ public class EvolutionChainRepository
 {
     private HttpClient _client;
 
-    public EvolutionChainRepository(HttpClient client)
+    public EvolutionChainRepository()
     {
-        _client = client;
+        _client = new HttpClient();
     }
 
     public async Task<EvolutionChainRoot> GetEvolutionChainByUrl(string url)

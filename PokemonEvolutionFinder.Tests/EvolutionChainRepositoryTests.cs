@@ -9,7 +9,7 @@ public class EvolutionChainRepositoryTests
     {
         string chainUrl = "https://pokeapi.co/api/v2/evolution-chain/2/";
         List<string> expected = new List<string>() { "charmander", "charmeleon", "Charizard" };
-        var repository = new EvolutionChainRepository(new HttpClient());
+        var repository = new EvolutionChainRepository();
 
         var evolutionChain = await repository.GetEvolutionChainByUrl(chainUrl);
 
