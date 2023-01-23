@@ -13,13 +13,6 @@ public class EvolutionFinderController : ControllerBase
         "Charmander", "Charmeleon", "Charizard"
     };
 
-    private HttpClient client;
-
-    public EvolutionFinderController()
-    {
-        client = new HttpClient();
-    }
-
     [HttpGet("{name}")]
     public async Task<IEnumerable<String>> GetAsync(string name)
     {
